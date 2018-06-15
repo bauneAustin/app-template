@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "playground for building application features",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./app/index.html",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaune/app-building-playground.git"
+  },
+  "author": "Austin Baune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abaune/app-building-playground/issues"
+  },
+  "homepage": "https://github.com/abaune/app-building-playground#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.9.0"
+  }
+}
