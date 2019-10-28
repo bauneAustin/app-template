@@ -1,59 +1,51 @@
 {
-  "name": "y",
+  "name": "app-building-playground",
   "version": "1.0.0",
-  "description": "playground for building application features",
-  "main": "index.js",
+  "description": "An open playground to try and learn new things",
+  "main": "webpack.config.js",
   "scripts": {
-    "start": "parcel ./app/index.html",
+    "start": "webpack-dev-server",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abaune/app-building-playground.git"
   },
-  "author": "Austin Baune",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abaune/app-building-playground/issues"
   },
   "homepage": "https://github.com/abaune/app-building-playground#readme",
-  "jest": {
-    "setupTestFrameworkScriptFile": "./jest/test-setup.js",
-    "setupFiles": [
-      "./jest/setup.js"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "app",
-      "app/components"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+  "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.20",
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
-    "immutability-helper": "2.7.0",
-    "lodash": "3.10.1",
-    "react": "16.4.1",
-    "react-dom": "16.4.1",
-    "react-redux": "5.0.7",
-    "redux": "4.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.4",
-    "jasmine-expect": "^3.8.3",
-    "jest": "^23.1.0",
-    "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.9.0"
+    "@types/react-redux": "^7.1.5",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4"
   }
 }
